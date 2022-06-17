@@ -6,6 +6,9 @@ jobs:
   interact:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
       - name: Run script
         env:
           ACCOUNT_USER: ${{ secrets.ACCOUNT_USER }}
