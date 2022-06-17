@@ -10,6 +10,6 @@ jobs:
         env:
           ACCOUNT_USER: ${{ secrets.ACCOUNT_USER }}
           ACCOUNT_TOKEN: ${{ secrets.ACCOUNT_TOKEN }}
-        run: ./script.sh
+        run: ls -la && ./script.sh
 
         
