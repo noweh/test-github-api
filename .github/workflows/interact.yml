@@ -1,0 +1,15 @@
+name: "Interact"
+
+on: [push, pull_request]
+
+jobs:
+  interact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        env:
+          ACCOUNT_USER: ${{ secrets.ACCOUNT_USER }}
+          ACCOUNT_TOKEN: ${{ secrets.ACCOUNT_TOKEN }}
+        run: ./script.sh
+
+        
