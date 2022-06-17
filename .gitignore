@@ -1,0 +1,10 @@
+.env
+# Others #
+######################
+.idea/
+.project/
+.bundle/
+*.retry
+.vscode/
+.phpunit.result.cache
+tags
